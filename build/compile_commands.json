@@ -1,0 +1,26 @@
+[
+{
+  "directory": "E:/Station/github/Z_SoftTracer/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IE:\\Station\\github\\Z_SoftTracer\\thirdparty\\glm /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /Za /fp:precise /Fothirdparty\\glm\\glm\\CMakeFiles\\glm.dir\\detail\\glm.cpp.obj /Fdthirdparty\\glm\\glm\\CMakeFiles\\glm.dir\\glm.pdb /FS -c E:\\Station\\github\\Z_SoftTracer\\thirdparty\\glm\\glm\\detail\\glm.cpp",
+  "file": "E:\\Station\\github\\Z_SoftTracer\\thirdparty\\glm\\glm\\detail\\glm.cpp",
+  "output": "thirdparty\\glm\\glm\\CMakeFiles\\glm.dir\\detail\\glm.cpp.obj"
+},
+{
+  "directory": "E:/Station/github/Z_SoftTracer/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IE:\\Station\\github\\Z_SoftTracer\\source\\include -IE:\\Station\\github\\Z_SoftTracer\\thirdparty\\glm /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /Fosource\\CMakeFiles\\Z_SoftTracer.dir\\src\\film.cpp.obj /Fdsource\\CMakeFiles\\Z_SoftTracer.dir\\ /FS -c E:\\Station\\github\\Z_SoftTracer\\source\\src\\film.cpp",
+  "file": "E:\\Station\\github\\Z_SoftTracer\\source\\src\\film.cpp",
+  "output": "source\\CMakeFiles\\Z_SoftTracer.dir\\src\\film.cpp.obj"
+},
+{
+  "directory": "E:/Station/github/Z_SoftTracer/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IE:\\Station\\github\\Z_SoftTracer\\source\\include -IE:\\Station\\github\\Z_SoftTracer\\thirdparty\\glm /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /Fosource\\CMakeFiles\\Z_SoftTracer.dir\\src\\main.cpp.obj /Fdsource\\CMakeFiles\\Z_SoftTracer.dir\\ /FS -c E:\\Station\\github\\Z_SoftTracer\\source\\src\\main.cpp",
+  "file": "E:\\Station\\github\\Z_SoftTracer\\source\\src\\main.cpp",
+  "output": "source\\CMakeFiles\\Z_SoftTracer.dir\\src\\main.cpp.obj"
+},
+{
+  "directory": "E:/Station/github/Z_SoftTracer/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP -IE:\\Station\\github\\Z_SoftTracer\\source\\include -IE:\\Station\\github\\Z_SoftTracer\\thirdparty\\glm /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /Fosource\\CMakeFiles\\Z_SoftTracer.dir\\src\\thread_pool.cpp.obj /Fdsource\\CMakeFiles\\Z_SoftTracer.dir\\ /FS -c E:\\Station\\github\\Z_SoftTracer\\source\\src\\thread_pool.cpp",
+  "file": "E:\\Station\\github\\Z_SoftTracer\\source\\src\\thread_pool.cpp",
+  "output": "source\\CMakeFiles\\Z_SoftTracer.dir\\src\\thread_pool.cpp.obj"
+}
+]
