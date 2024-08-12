@@ -7,7 +7,7 @@ class SimpleTask : public Task{
 public:
     void run() override{
         std::cout << "Hello World !"<<std::endl;
-    } 
+    }
 };
 
 int main(){
