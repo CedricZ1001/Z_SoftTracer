@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "source/Z_SoftTracer.exe"
+			"path" : "source/MinSizeRel/Z_SoftTracer.exe"
 		},
 		{
-			"path" : "source/Z_SoftTracer.pdb"
+			"path" : "source/MinSizeRel/Z_SoftTracer.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,18 +52,18 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG -std:c++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "E:/Station/github/Z_SoftTracer/source/include"
+					"path" : "C:/Workspace/github/Z_SoftTracer/source/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/Station/github/Z_SoftTracer/thirdparty/glm"
+					"path" : "C:/Workspace/github/Z_SoftTracer/thirdparty/glm"
 				}
 			],
 			"language" : "CXX",
@@ -88,6 +88,9 @@
 		{
 			"backtrace" : 2,
 			"id" : "glm::@f1b70c6d19f780db02f3"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Z_SoftTracer::@411ffd8adc737496fe19",
@@ -96,16 +99,16 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:X86 /debug /INCREMENTAL /subsystem:console",
+				"fragment" : "/machine:X86 /INCREMENTAL:NO /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "thirdparty\\glm\\glm\\glm.lib",
+				"fragment" : "..\\thirdparty\\glm\\glm\\MinSizeRel\\glm.lib",
 				"role" : "libraries"
 			},
 			{

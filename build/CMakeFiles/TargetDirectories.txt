@@ -1,10 +1,5 @@
-E:/Station/github/Z_SoftTracer/build/CMakeFiles/edit_cache.dir
-E:/Station/github/Z_SoftTracer/build/CMakeFiles/rebuild_cache.dir
-E:/Station/github/Z_SoftTracer/build/thirdparty/glm/CMakeFiles/edit_cache.dir
-E:/Station/github/Z_SoftTracer/build/thirdparty/glm/CMakeFiles/rebuild_cache.dir
-E:/Station/github/Z_SoftTracer/build/thirdparty/glm/glm/CMakeFiles/glm.dir
-E:/Station/github/Z_SoftTracer/build/thirdparty/glm/glm/CMakeFiles/edit_cache.dir
-E:/Station/github/Z_SoftTracer/build/thirdparty/glm/glm/CMakeFiles/rebuild_cache.dir
-E:/Station/github/Z_SoftTracer/build/source/CMakeFiles/Z_SoftTracer.dir
-E:/Station/github/Z_SoftTracer/build/source/CMakeFiles/edit_cache.dir
-E:/Station/github/Z_SoftTracer/build/source/CMakeFiles/rebuild_cache.dir
+C:/Workspace/github/Z_SoftTracer/build/CMakeFiles/ALL_BUILD.dir
+C:/Workspace/github/Z_SoftTracer/build/CMakeFiles/ZERO_CHECK.dir
+C:/Workspace/github/Z_SoftTracer/build/thirdparty/glm/CMakeFiles/ALL_BUILD.dir
+C:/Workspace/github/Z_SoftTracer/build/thirdparty/glm/glm/CMakeFiles/glm.dir
+C:/Workspace/github/Z_SoftTracer/build/source/CMakeFiles/Z_SoftTracer.dir

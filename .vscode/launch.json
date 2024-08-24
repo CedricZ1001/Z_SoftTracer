@@ -8,9 +8,11 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/build/source/Z_SoftTracer",
+            "program": "${workspaceFolder}/build/source/Debug/Z_SoftTracer.exe",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+
         }
+        
     ]
 }

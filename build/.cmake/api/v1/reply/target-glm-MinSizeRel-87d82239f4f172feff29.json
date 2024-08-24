@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "thirdparty/glm/glm/glm.lib"
+			"path" : "thirdparty/glm/glm/MinSizeRel/glm.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -69,7 +69,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG"
 				},
 				{
 					"backtrace" : 3,
@@ -84,7 +84,7 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "E:/Station/github/Z_SoftTracer/thirdparty/glm"
+					"path" : "C:/Workspace/github/Z_SoftTracer/thirdparty/glm"
 				}
 			],
 			"language" : "CXX",
@@ -92,6 +92,12 @@
 			[
 				28
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "glm::@f1b70c6d19f780db02f3",
