@@ -1,5 +1,0 @@
-C:/Workspace/github/Z_SoftTracer/build/CMakeFiles/ALL_BUILD.dir
-C:/Workspace/github/Z_SoftTracer/build/CMakeFiles/ZERO_CHECK.dir
-C:/Workspace/github/Z_SoftTracer/build/thirdparty/glm/CMakeFiles/ALL_BUILD.dir
-C:/Workspace/github/Z_SoftTracer/build/thirdparty/glm/glm/CMakeFiles/glm.dir
-C:/Workspace/github/Z_SoftTracer/build/source/CMakeFiles/Z_SoftTracer.dir
