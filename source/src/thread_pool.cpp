@@ -1,5 +1,6 @@
 #include"thread_pool.hpp"
 
+
 void ThreadPool::WorkrThread(ThreadPool *master){
     while(master->alive){
         Task *task =master->GetTask();

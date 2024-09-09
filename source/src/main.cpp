@@ -17,6 +17,7 @@ int main(){
             film.setPixel(j,i,{0.5,0.7,0.2});
         }
     }
+    
     film.Save("test.ppm");
     ThreadPool thread_pool{};
     thread_pool.AddTask(new SimpleTask());
