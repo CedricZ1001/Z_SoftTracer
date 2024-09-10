@@ -1,13 +1,17 @@
 #pragma
 
-#include<atomic>
-#include<thread>
+#include <atomic>
+#include <thread>
 
-class SpinLock{
+class SpinLock {
 public:
-    void acquire(){while (flag.test_and_set(std::memory_order_acquire)){std::this_thread::yield();}}
-    void release(){flag.clear(std::memory_order_release);}
-    
+  void acquire() {
+    while (flag.test_and_set(std::memory_order_acquire)) {
+      std::this_thread::yield();
+    }
+  }
+  void release() { flag.clear(std::memory_order_release); }
+
 private:
-    std::atomic_flag flag {};
+  std::atomic_flag flag{};
 };
