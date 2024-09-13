@@ -4,11 +4,12 @@
 #include <glm/glm.hpp>
 #include <vector>
 
-
 class Film {
 public:
   Film(size_t width, size_t height);
+
   void Save(const std::filesystem::path &filename);
+
   inline size_t GetWidth() const { return width; }
   inline size_t GetHeight() const { return height; }
   inline glm::vec3 GetPixel(size_t x, size_t y) {

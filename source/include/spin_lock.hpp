@@ -16,6 +16,7 @@ public:
 private:
   std::atomic_flag flag{};
 };
+
 class Guard {
 public:
   Guard(SpinLock &spin_lock) : spin_lock(spin_lock) { spin_lock.Acquire(); }

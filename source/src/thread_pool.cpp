@@ -1,10 +1,12 @@
 #include "thread_pool.hpp"
+#include <cstddef>
+#include <functional>
 
 void ThreadPool::WorkrThread(ThreadPool *master) {
   while (master->alive) {
     Task *task = master->GetTask();
     if (task != nullptr) {
-      task->run();
+      task->Run();
     } else {
       std::this_thread::yield();
     }
@@ -12,7 +14,7 @@ void ThreadPool::WorkrThread(ThreadPool *master) {
 }
 
 ThreadPool::ThreadPool(size_t thread_count) {
-  alive = true;
+  alive = 1;
   if (thread_count == 0) {
     thread_count = std::thread::hardware_concurrency();
   }
@@ -22,23 +24,51 @@ ThreadPool::ThreadPool(size_t thread_count) {
 }
 
 ThreadPool::~ThreadPool() {
-  while (!tasks.empty()) {
-    std::this_thread::yield();
-  }
-  alive = false;
+  Wait();
+  alive = 0;
   for (auto &thread : threads) {
     thread.join();
   }
   threads.clear();
 }
 
+struct ParallelForTask : public Task {
+public:
+  ParallelForTask(size_t x, size_t y,
+                  const std::function<void(size_t, size_t)> &lambda)
+      : x(x), y(y), lambda(lambda) {}
+  void Run() override { lambda(x, y); }
+
+private:
+  size_t x, y;
+  std::function<void(size_t, size_t)> lambda;
+};
+
+void ThreadPool::ParallelFor(
+    size_t width, size_t height,
+    const std::function<void(size_t, size_t)> &lambda) {
+  Guard guard(spin_lock);
+
+  for (size_t x = 0; x < width; x++) {
+    for (size_t y = 0; y < height; y++) {
+      tasks.push_back(new ParallelForTask(x, y, lambda));
+    }
+  }
+}
+
+void ThreadPool::Wait() const {
+  while (!tasks.empty()) {
+    std::this_thread::yield();
+  }
+}
+
 void ThreadPool::AddTask(Task *task) {
-  std::lock_guard<std::mutex> guard(lock);
+  Guard guard(spin_lock);
   tasks.push_back(task);
 }
 
 Task *ThreadPool::GetTask() {
-  std::lock_guard<std::mutex> guard(lock);
+  Guard guard(spin_lock);
   if (tasks.empty()) {
     return nullptr;
   }
